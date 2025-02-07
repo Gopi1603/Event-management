@@ -18,7 +18,7 @@ const CreateEvent = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/events', formData, {
+      await axios.post('https://event-management-krqp.onrender.com/events', formData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       navigate('/dashboard');
