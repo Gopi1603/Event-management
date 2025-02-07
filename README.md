@@ -51,6 +51,21 @@ This is a **full-stack** event management platform where users can **create, man
 
 ---
 
+### 📸 Deployment Screenshots
+- ![MongoDB Atlas](./(anywhere)_database-monodb-atlas.png)  
+  *MongoDB Atlas Dashboard (Free Tier)*
+- ![Backend on Render](./backend-render.png)  
+  *Backend Deployment on Render*
+- ![Frontend on Vercel](./frontend-vercel.png)  
+  *Frontend Deployment on Vercel*
+
+  
+## 🧪 Sample Credentials for Testing
+- **Email:** `sandy@gmail.com`  
+- **Password:** `sandy`  
+
+---
+  
 ## 🛠️ Installation & Setup
 
 ### 📌 Frontend Setup
@@ -76,13 +91,26 @@ This is a **full-stack** event management platform where users can **create, man
 
 ---
 
-## 🧪 Sample Credentials for Testing
-- **Email:** `sandy@gmail.com`  
-- **Password:** `sandy`  
-
----
-
-💡 **Happy Coding!** 🚀
+### 📌 Backend Setup
+1️⃣ Navigate to the frontend folder:  
+   ```sh
+   cd backend
+   ```
+2️⃣ Install dependencies:  
+   ```sh
+   npm i
+   ```
+3️⃣ Configure Environment Variables:  
+   replace links to localhost in the backend files and include your monodb credentials(.env) to test or use my deployed version:
+   ```sh
+   =http://localhost:5000
+   ```
+   _(Note: Replace with my deployed backend URL with localhost:5000 for testing)_
+4️⃣ Run the frontend development server:  
+   ```sh
+   nodemon server.js
+   ```
+   📌 Opens at: **http://localhost:5000**
 
 ---
 
