@@ -43,6 +43,10 @@ This is a **full-stack** event management platform where users can **create, man
 
 ---
 
+## 🧪 Sample Credentials for Testing
+- **Email:** `sandy@gmail.com`  
+- **Password:** `sandy`  
+---
 ## 🌍 Deployment
 
 ### 🎯 Live URLs
@@ -60,10 +64,6 @@ This is a **full-stack** event management platform where users can **create, man
   *Frontend Deployment on Vercel*
 
   
-## 🧪 Sample Credentials for Testing
-- **Email:** `sandy@gmail.com`  
-- **Password:** `sandy`  
-
 ---
   
 ## 🛠️ Installation & Setup
