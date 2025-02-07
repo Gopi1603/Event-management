@@ -15,7 +15,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/auth/register', formData);
+      const res = await axios.post('https://event-management-krqp.onrender.com/auth/register', formData);
       login(res.data.token);
       navigate('/dashboard');
     } catch (error) {
