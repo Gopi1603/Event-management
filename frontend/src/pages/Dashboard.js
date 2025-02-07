@@ -18,7 +18,7 @@ const Dashboard = () => {
     const fetchEvents = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/events', {
+        const res = await axios.get('https://event-management-krqp.onrender.com/events', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setEvents(res.data);
@@ -28,7 +28,7 @@ const Dashboard = () => {
     };
     fetchEvents();
 
-    const socket = io('http://localhost:5000');
+    const socket = io('https://event-management-krqp.onrender.com');
     socket.on('updateAttendees', (data) => {
       setAttendeeCounts((prev) => ({ ...prev, [data.eventId]: data.count }));
     });
