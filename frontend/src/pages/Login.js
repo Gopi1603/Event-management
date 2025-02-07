@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/auth/login', formData);
+      const res = await axios.post('https://event-management-krqp.onrender.com/auth/login', formData);
       login(res.data.token);
       navigate('/dashboard');
     } catch (error) {
@@ -26,7 +26,7 @@ const Login = () => {
   // Optional: Guest login functionality
   const guestLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/auth/guest');
+      const res = await axios.post('https://event-management-krqp.onrender.com/auth/guest');
       login(res.data.token);
       navigate('/dashboard');
     } catch (error) {
